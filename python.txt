@@ -1,0 +1,38 @@
+Problem 1:
+ import re 
+  
+regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+      
+
+def check(email):  
+   
+    if(re.search(regex,email)):  
+        print(email)  
+           
+       
+if __name__ == '__main__' :  
+      
+     i=input("enter the value:")
+     for n in range(0,i):
+        email=raw_input("enter mail:")
+        check(email)
+
+
+
+Problem 2: 
+
+
+for i in range(1,int(input())+1):
+    print ((10**i-1)**2//81)
+
+
+Problem 3:
+
+ def sum_of_squares(n):
+    return sum([i**2 for i in range(1, n+1)])
+
+def square_of_sum(n):
+    return sum(range(1, n+1)) ** 2
+
+n=input("enter your input:")
+print square_of_sum(n) - sum_of_squares(n)
